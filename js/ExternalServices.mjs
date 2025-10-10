@@ -24,10 +24,11 @@ export default class ExternalServices {
         return result;
     }
     async findProductById(id) {
-        const products = await fetch(`${baseURL}product/${id}`);
+        const products = await fetch(baseURL);
         const data = await convertToJson(products);
-        console.log(data.Result);
-        return data.Result;
+        const result = data.find(r => r.code === id);
+        console.log(result);
+        return result;
     }
 
     async checkout(payload) {
