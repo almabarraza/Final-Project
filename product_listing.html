@@ -14,8 +14,19 @@
     <main class="divider">
         <section class="products">
             <h2>Top Products: <span class="title highlight"></span></h2>
+            <div>
+                <label for="search">Search</label>
+                <input type="text" id="search" name="search" placeholder=" Search by name" />
+                <label for="sortBy">Sort by:</label>
+                <select id="sortBy">
+                    <option value="name">Name (A-Z)</option>
+                    <option value="price">Price (Low to High)</option>
+                    <option value="price-desc">Price (High to Low)</option>
+                </select>
+            </div>
             <ul id="listElement" class="product-list"></ul>
         </section>
+
     </main>
     <footer id="main-footer"></footer>
 </body>

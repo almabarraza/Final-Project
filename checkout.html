@@ -1,0 +1,85 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>AB Fashion Jewelry | Checkout</title>
+
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="../js//checkout.js" type="module"></script>
+</head>
+
+<body>
+    <header class="divider" id="main-header"></header>
+
+    <main class="divider checkout">
+        <h2>Review & Place your Order</h2>
+        <section class="checkout-form">
+            <form name="checkout" class="form1">
+                <input type="hidden" name="ordenDate" id="orderDate" />
+
+                <fieldset>
+                    <legend>Customer Name</legend>
+                    <div class="checkout__name">
+                        <label>First Name<input type="text" name="fname" required /></label>
+                        <label>Last Name<input type="text" name="lname" required /></label>
+                    </div>
+
+                    <div class="checkout__address">
+                        <legend>Address</legend>
+                        <label for="street">Street Address:</label>
+                        <input type="text" id="street" name="street" placeholder="123 Main St"
+                            autocomplete="street-address" required />
+                        <label for="city">City:</label>
+                        <input type="text" id="city" name="city" autocomplete="address-level2" required />
+                        <label for="state">State/Province:</label>
+                        <input type="text" id="state" name="state" autocomplete="address-level1" required />
+                        <label for="zip">ZIP / Postal Code:</label>
+                        <input type="text" id="zip" name="zip" autocomplete="postal-code" required />
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Payment</legend>
+                    <label for="cardNumber">Card Number:</label>
+                    <input type="text" id="cardNumber" name="cardNumber" inputmode="numeric" autocomplete="cc-number"
+                        placeholder="1234 5678 9012 3456" value="1234123412341234" required />
+                    <!-- Fecha de expiración -->
+                    <label for="expiration">Expiration Date (MM/YY):</label>
+                    <input type="text" id="expiration" name="expiration" value="02/26" autocomplete="cc-exp"
+                        placeholder="09/27" required />
+                    <!-- Código de seguridad -->
+                    <label for="code">Security Code (CVV):</label>
+                    <input type="text" id="code" name="code" value="123" inputmode="numeric" autocomplete="cc-csc"
+                        placeholder="123" required />
+                </fieldset>
+
+                <fieldset class="checkout-summary">
+                    <legend>Order Summary</legend>
+
+                    <div class="order__summary">
+                        <div>Items:</div>
+                        <div id="num-items"></div>
+                        <div>Subtotal:</div>
+                        <div id="cartTotal"></div>
+                        <div>Tax:</div>
+                        <div id="tax"></div>
+                        <div>Shipping:</div>
+                        <div id="shipping"></div>
+                        <div>Total:</div>
+                        <div id="orderTotal"></div>
+                    </div>
+                </fieldset>
+                <button type="submit" id="checkoutSubmit">Checkout</button>
+            </form>
+        </section>
+    </main>
+
+    <footer id="main-footer">&copy;NOT a real business</footer>
+</body>
+
+</html>

@@ -28,12 +28,12 @@ export default class ProductDetails {
         if (!products) {
             products = [];
         }
-
+        console.log(this.product);
         products.push(this.product);
         setLocalStorage("so-cart", products);
 
         //alert Message when the add to cart button has been clicking
-        alertMessage(`${this.product.NameWithoutBrand} added to cart!`);
+        alertMessage(`${this.product.name} added to cart!`);
 
         //logo animation
         const cartLogo = document.getElementById("cart-logo");
