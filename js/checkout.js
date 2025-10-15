@@ -28,14 +28,6 @@ document.querySelector("#checkoutSubmit").addEventListener("click", async (e) =>
         return;
     }
 
-    // (Opcional) actualizar el formulario con dirección corregida
-    document.querySelector("#street").value = result.delivery_line_1;
-    const [cityFixed, stateZip] = result.last_line.split(",");
-    const [stateFixed, zip] = stateZip.trim().split(" ");
-    document.querySelector("#city").value = cityFixed.trim();
-    document.querySelector("#state").value = stateFixed;
-    document.querySelector("#zip").value = zip;
-
 
     order.checkout();
 });
