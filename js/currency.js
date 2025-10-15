@@ -1,6 +1,6 @@
 export async function convertUsdToMxn(usdAmount) {
 
-    const apiKey = cur_live_mL8W3VPpFbJtql5rVuR5VZM5QRXv4EQJm5d21TDC
+    const apiKey = 'cur_live_wsOaqLlPXQ3WFGNdrNlRLwrvqbOlaZJ2YK2w7rtI';
     const url = `https://api.currencyapi.com/v3/latest?apikey=${apiKey}&base_currency=USD&currencies=MXN`;
 
     try {
