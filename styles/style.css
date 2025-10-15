@@ -147,6 +147,15 @@ button {
   margin: 0.5em 0;
 }
 
+@media (max-width: 600px) {
+    .product-card {
+        flex: 1 1 100%;
+        /* En pantallas pequeñas que ocupe todo el ancho */
+    }
+}
+
+
+
 .card__brand {
   font-size: var(--small-font);
 }

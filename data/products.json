@@ -60,6 +60,42 @@
     }
   },
   {
+    "code": "BRC-006",
+    "name": "Azure Ripple Bracelet",
+    "description": "Cool blue crystals ripple across interlocking bands, evoking the tranquil rhythm of ocean tides.",
+    "category": "Bracelets",
+    "price": 49.60,
+    "images": {
+      "small": "images/Bracelets6_small.webp",
+      "medium": "images/Bracelets6_medium.webp",
+      "large": "images/Bracelets6_large.webp"
+    }
+  },
+  {
+    "code": "BRC-007",
+    "name": "Ember Glow Bracelet",
+    "description": "Smoldering amber stones gleam between dark metallic links for a bracelet rich in contrast and warmth.",
+    "category": "Bracelets",
+    "price": 46.80,
+    "images": {
+      "small": "images/Bracelets7_small.webp",
+      "medium": "images/Bracelets7_medium.webp",
+      "large": "images/Bracelets7_large.webp"
+    }
+  },
+  {
+    "code": "BRC-008",
+    "name": "Iridescent Bloom Bracelet",
+    "description": "Petal-shaped charms shimmer with prismatic hues, creating a bracelet that flourishes with every movement.",
+    "category": "Bracelets",
+    "price": 52.40,
+    "images": {
+      "small": "images/Bracelets8_small.webp",
+      "medium": "images/Bracelets8_medium.webp",
+      "large": "images/Bracelets8_large.webp"
+    }
+  },
+  {
     "code": "EAR-001",
     "name": "Starlit Cascade Earrings",
     "description": "Tiered crystal drops fall like stars across the night sky, bringing graceful movement to these earrings.",
@@ -117,6 +153,66 @@
       "small": "images/Earrings5_small.webp",
       "medium": "images/Earrings5_medium.webp",
       "large": "images/Earrings5_large.webp"
+    }
+  },
+  {
+    "code": "EAR-006",
+    "name": "Glacial Arc Earrings",
+    "description": "Cascading arcs of icy crystals lend a refreshing sparkle that brightens every turn of the head.",
+    "category": "Earrings",
+    "price": 35.90,
+    "images": {
+      "small": "images/Earrings6_small.webp",
+      "medium": "images/Earrings6_medium.webp",
+      "large": "images/Earrings6_large.webp"
+    }
+  },
+  {
+    "code": "EAR-007",
+    "name": "Gilded Wing Earrings",
+    "description": "Feathered silhouettes trimmed in gold fan gracefully, creating earrings that flutter with luminous charm.",
+    "category": "Earrings",
+    "price": 37.80,
+    "images": {
+      "small": "images/Earrings7_small.webp",
+      "medium": "images/Earrings7_medium.webp",
+      "large": "images/Earrings7_large.webp"
+    }
+  },
+  {
+    "code": "EAR-008",
+    "name": "Opaline Halo Earrings",
+    "description": "Soft opaline gems rest within radiant halos, bringing a refined glow to both day and evening attire.",
+    "category": "Earrings",
+    "price": 36.20,
+    "images": {
+      "small": "images/Earrings8_small.webp",
+      "medium": "images/Earrings8_medium.webp",
+      "large": "images/Earrings8_large.webp"
+    }
+  },
+  {
+    "code": "EAR-009",
+    "name": "Twilight Drop Earrings",
+    "description": "Deep violet crystals descend from sleek metallic studs, mirroring the colors of the evening sky.",
+    "category": "Earrings",
+    "price": 39.60,
+    "images": {
+      "small": "images/Earrings9_small.webp",
+      "medium": "images/Earrings9_medium.webp",
+      "large": "images/Earrings9_large.webp"
+    }
+  },
+  {
+    "code": "EAR-010",
+    "name": "Aurora Spiral Earrings",
+    "description": "Spiraling bands of pastel crystals catch the light, creating a mesmerizing aurora-inspired shimmer.",
+    "category": "Earrings",
+    "price": 40.10,
+    "images": {
+      "small": "images/Earrings10_small.webp",
+      "medium": "images/Earrings10_medium.webp",
+      "large": "images/Earrings10_large.webp"
     }
   },
   {

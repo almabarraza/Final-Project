@@ -70,6 +70,7 @@ function cartItemTemplate(item) {
     <img
       src="${item.images.small}"
       alt="${item.name}"
+      width = "80" height="100"
     />
   </a>
   <a href="#">
