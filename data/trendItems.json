@@ -1,0 +1,38 @@
+[
+  {
+    "code": "EAR-002",
+    "name": "Celestial Hoop Earrings",
+    "description": "Orbit-inspired hoops adorned with shimmering stones add a cosmic flair to any evening ensemble.",
+    "category": "Earrings",
+    "price": 36.75,
+    "images": {
+      "small": "images/Earrings2_small.webp",
+      "medium": "images/Earrings2_medium.webp",
+      "large": "images/Earrings2_large.webp"
+    }
+  },
+  {
+    "code": "NCK-001",
+    "name": "Moonriver Necklace",
+    "description": "A flowing silver chain adorned with luminous stones captures the gentle movement of moonlit water.",
+    "category": "Necklaces",
+    "price": 59.90,
+    "images": {
+      "small": "images/Necklaces1_small.webp",
+      "medium": "images/Necklaces1_medium.webp",
+      "large": "images/Necklaces1_large.webp"
+    }
+  },
+  {
+    "code": "NCK-002",
+    "name": "Auric Bloom Necklace",
+    "description": "Golden floral motifs bloom along the chain, bringing radiant warmth to this necklace design.",
+    "category": "Necklaces",
+    "price": 64.50,
+    "images": {
+      "small": "images/Necklaces2_small.webp",
+      "medium": "images/Necklaces2_medium.webp",
+      "large": "images/Necklaces2_large.webp"
+    }
+  }
+]

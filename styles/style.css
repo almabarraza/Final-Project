@@ -220,15 +220,6 @@ button {
   }
 }
 
-footer {
-  grid-template-columns: repeat(3, 1fr);
-  gap: 5px;
-
-}
-
-footer div {
-  padding: 15px;
-}
 
 /*
 
@@ -288,6 +279,7 @@ footer {
   background-color: var(--category-color);
   padding: 10px;
   border: 2px solid #ddd;
+
 }
 
 .checkout-button {
@@ -299,6 +291,7 @@ footer {
 
 .checkout-button:link {
   color: white;
+
 }
 
 .checkout-button:visited {
@@ -411,5 +404,84 @@ footer {
 
 .heart.liked::before {
   content: "❤️";
+
+}
+
+/*Trending Jewerlry section*/
+.trend-name {
+  color: var(--category-color);
+}
+
+.spotlights {
+  display: grid;
+  grid-template-columns: 1fr;
+  border: none;
+
+  font-size: medium;
+}
+
+.style-spotlights {
+  border: 2px solid #ddd;
+  border-radius: 15px;
+  color: var(--text-color-header);
+  background-color: whitesmoke;
+  margin: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.h2Trend {
+  color: var(--secondary-color);
+  text-align: left;
+  margin-top: 15px;
+
+}
+
+.link-style {
+  text-decoration: none;
+}
+
+.plus::before {
+  content: "➕";
+  cursor: pointer;
+  font-size: 0.7rem;
+  margin: 2px;
+
+
+}
+
+.minus::before {
+  content: "➖";
+  cursor: pointer;
+  font-size: 0.7rem;
+  margin: 2px;
+
+}
+
+.save-for-later,
+.move-to-cart {
+  background: #555;
+  border: #495057;
+  color: white;
+  cursor: pointer;
+  font-size: 0.9em;
+  padding: 4px;
+  text-decoration: none;
+}
+
+.saved-items {
+  margin-top: 50px;
+  border-style: dashed;
+  border-color: var(--border-color);
+  border-width: 0.5px;
+
+}
+
+.saved-items li {
+  list-style: none;
+}
+
+.total-pesos {
+  margin-bottom: 30px;
 
 }

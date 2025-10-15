@@ -1,4 +1,4 @@
-
+import { getTrendItems } from "./ExternalServices.mjs";
 
 /*load header and footer dynamically on each page of the site*/
 export async function loadHeaderFooter() {
@@ -110,6 +110,46 @@ export function removeAllAlerts() {
     const alerts = document.querySelectorAll(".alert");
     alerts.forEach((alert) => document.querySelector("main").removeChild(alert));
 }
+
+export async function displayTrendItems() {
+    const url = "data/trendItems.json";
+    const items = await getTrendItems(url);
+    console.log(items);
+    const selector = document.querySelector('#cards');
+    selector.innerHTML = "";
+    items.forEach(item => {
+
+
+        /*Here the elements are created*/
+        let card = document.createElement("div");
+        let name = document.createElement("h3");
+        let photo = document.createElement("img");
+        let link = document.createElement("a");
+
+        link.setAttribute('href', `product_details.html?product=${item.code}`);
+        name.innerHTML = `<span class="trend-name">${item.name}</span>`;
+        photo.setAttribute('id', `${item.code}`);
+        photo.setAttribute("src", item.images.medium);
+        photo.setAttribute("alt", item.name);
+        photo.setAttribute("loading", "lazy");
+        photo.setAttribute("width", "200");
+        photo.setAttribute("height", "250");
+        photo.classList.add('image-zoom');
+        card.classList.add('style-spotlights');
+        link.classList.add('link-style');
+
+        link.appendChild(photo);
+        link.appendChild(name);
+        /*
+        card.appendChild(name);
+        card.appendChild(photo);*/
+        card.appendChild(link);
+        selector.appendChild(card);
+
+    });
+
+}
+
 
 
 

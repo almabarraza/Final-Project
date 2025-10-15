@@ -3,6 +3,7 @@ import ExternalServices from "./ExternalServices.mjs";
 
 
 
+
 const services = new ExternalServices();
 
 function formDataToJSON(formElement) {
@@ -24,7 +25,7 @@ function packageItems(items) {
             id: item.Id,
             price: item.FinalPrice,
             name: item.Name,
-            quantity: 1,
+            quantity: item.quantity,
         };
     });
     return simplifiedItems;
@@ -51,13 +52,14 @@ export default class CheckoutProcess {
 
 
 
+
     calculateItemSummary() {
 
         const summaryElement = document.querySelector(this.outputSelector + " #cartTotal");
         const itemNumElement = document.querySelector(this.outputSelector + " #num-items");
-        console.log(this.outputSelector);
         itemNumElement.innerText = this.list.length;
-        const amounts = this.list.map((item) => item.FinalPrice);
+        const amounts = this.list.map((item) => item.price * item.quantity);
+        console.log(amounts);
         this.itemTotal = amounts.reduce((sum, item) => sum + item);
         summaryElement.innerText = `$${this.itemTotal}`;
     }
@@ -90,31 +92,13 @@ export default class CheckoutProcess {
 
 
     async checkout() {
-        const formElement = document.forms["checkout"];
-        const order = formDataToJSON(formElement);
 
-        order.orderDate = new Date().toISOString();
-        order.orderTotal = this.orderTotal;
-        order.tax = this.tax;
-        order.shipping = this.shipping;
-        order.items = packageItems(this.list);
-
-        try {
-            const response = await services.checkout(order);
-            console.log(response);
-            setLocalStorage("so-cart", []);
-            location.assign("success.html");
-        } catch (err) {
-            removeAllAlerts();
-            for (let message in err.message) {
-                alertMessage(err.message[message]);
-            }
-
-            console.log(err);
-
-        }
+        setLocalStorage("so-cart", []);
+        location.assign("success.html");
 
     }
+
+
 
 }
 

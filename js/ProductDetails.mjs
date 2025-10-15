@@ -28,8 +28,18 @@ export default class ProductDetails {
         if (!products) {
             products = [];
         }
-        console.log(this.product);
-        products.push(this.product);
+
+        const productInCart = products.find(product => product.code === this.product.code);
+
+        if (productInCart) {
+            productInCart.quantity = productInCart.quantity + 1;
+
+        } else {
+            this.product.quantity = 1;
+            products.push(this.product);
+        }
+
+
         setLocalStorage("so-cart", products);
 
         //alert Message when the add to cart button has been clicking
@@ -45,6 +55,7 @@ export default class ProductDetails {
         })
 
     }
+
 
     renderProductDetails() {
         productDetailsTemplate(this.product);

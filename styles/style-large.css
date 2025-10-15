@@ -1,0 +1,21 @@
+@media only screen and (min-width: 640px) {
+
+
+    .spotlights {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin: 10px;
+        font-size: larger;
+
+    }
+
+    footer {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+
+    }
+
+    footer div {
+        padding: 15px;
+    }
+}

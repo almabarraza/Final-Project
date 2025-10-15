@@ -10,6 +10,17 @@ async function convertToJson(res) {
     }
 }
 
+export async function getTrendItems(url) {
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error('Error getting data', error);
+    }
+
+
+}
 
 export default class ExternalServices {
     constructor() {
@@ -39,6 +50,6 @@ export default class ExternalServices {
             },
             body: JSON.stringify(payload),
         };
-        return await fetch(`${baseURL}checkout/`, options).then(convertToJson);
+        return await fetch(`${baseURL}`, options).then(convertToJson);
     }
 }
